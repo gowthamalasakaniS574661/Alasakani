@@ -1,188 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gowtham Alasakani - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gowtham Alasakani | Data Engineer Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Gowtham Alasakani - Data Engineer skilled in Python, SQL, AWS, ETL Pipelines, and Analytics Engineering.">
+  <meta name="keywords" content="Data Engineer, Python, SQL, AWS, ETL, Analytics, Portfolio">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">GA</div>
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <span class="theme-icon">🌙</span>
-            </button>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title fade-in">Hi, I'm <span class="highlight">Gowtham Alasakani</span></h1>
-            <p class="hero-subtitle fade-in">Full Stack Developer | AI/ML Enthusiast | Problem Solver</p>
-            <div class="hero-buttons fade-in">
-                <a href="#projects" class="btn btn--primary">View Projects</a>
-                <a href="#contact" class="btn btn--outline">Get In Touch</a>
-            </div>
-        </div>
-    </section>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">GA</div>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate Full Stack Developer and AI/ML enthusiast currently pursuing my Master's in Applied Computer Science. With a strong foundation in software development and machine learning, I specialize in creating innovative solutions that solve real-world problems.</p>
-                    <p>My experience spans across web development, data analysis, and AI implementation, with a focus on building scalable and efficient applications. I'm always eager to learn new technologies and take on challenging projects.</p>
-                </div>
-                <div class="education-section">
-                    <h3>Education</h3>
-                    <div class="education-grid" id="educationGrid"></div>
-                </div>
-                <div class="location-info">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>Maryville, MO</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="assets/Gowtham_Alasakani_Resume.pdf" target="_blank" class="nav-link">Resume</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills &amp; Technologies</h2>
-            <div class="skills-grid" id="skillsGrid"></div>
-        </div>
-    </section>
+    <button class="theme-toggle" id="themeToggle">
+      <span class="theme-icon">🌙</span>
+    </button>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid" id="projectsGrid"></div>
-        </div>
-    </section>
+    <button class="mobile-toggle" id="mobileToggle">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline" id="experienceTimeline"></div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title fade-in">
+      Hi, I'm <span class="highlight">Gowtham Alasakani</span>
+    </h1>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid" id="certificationsGrid"></div>
-        </div>
-    </section>
+    <p class="hero-subtitle fade-in">
+      Data Engineer | Python, SQL & AWS | ETL & Analytics Solutions
+    </p>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:gowthamalasakani20@gmail.com">gowthamalasakani20@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+17042013496">+1-704-201-3496</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://linkedin.com/in/gowthamalasakani" target="_blank">linkedin.com/in/gowthamalasakani</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" class="form-control" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
-                    </form>
-                    <div id="formMessage" class="form-message"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="hero-buttons fade-in">
+      <a href="#projects" class="btn btn--primary">View Projects</a>
+      <a href="assets/Gowtham_Alasakani_Resume.pdf" target="_blank" class="btn btn--secondary">View Resume</a>
+      <a href="assets/Gowtham_Alasakani_Resume.pdf" download class="btn btn--outline">Download Resume</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Gowtham Alasakani. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:gowthamalasakani20@gmail.com" aria-label="Email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
 
-    <script src="app.js"></script>
+    <p>
+      I am a Data Engineer with hands-on experience building scalable ETL pipelines,
+      analytics-ready datasets, and time-series data solutions using Python, SQL, and AWS.
+    </p>
+
+    <p>
+      I have delivered cloud-based data automation solutions that improved machine learning
+      accuracy by 25% and reduced processing latency by 40%. I enjoy working in Agile,
+      cross-functional environments to solve data reliability and performance challenges.
+    </p>
+
+    <div class="location-info">
+      <span>📍 Charlotte, NC</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div id="skillsGrid" class="skills-grid"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div id="projectsGrid" class="projects-grid"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <div id="experienceTimeline" class="experience-timeline"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div id="certificationsGrid" class="certifications-grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <p>Email: <a href="mailto:gowthamalasakani20@gmail.com">gowthamalasakani20@gmail.com</a></p>
+    <p>Phone: <a href="tel:+17042013496">+1-704-201-3496</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/gowthamalasakani" target="_blank">linkedin.com/in/gowthamalasakani</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Gowtham Alasakani</p>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
