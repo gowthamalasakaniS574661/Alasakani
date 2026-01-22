@@ -1,116 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Gowtham Alasakani | Data Engineer Portfolio</title>
+  <title>Gowtham Alasakani | Data Engineer</title>
 
-  <meta name="description" content="Gowtham Alasakani – Data Engineer skilled in Python, SQL, AWS, and ETL pipelines.">
-  <meta name="keywords" content="Data Engineer, Python, SQL, AWS, ETL">
+  <meta name="description" content="Gowtham Alasakani – Data Engineer skilled in Python, SQL, AWS, ETL pipelines.">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar" id="navbar">
+<!-- NAVBAR -->
+<nav class="navbar">
   <div class="nav-container">
     <div class="nav-brand">GA</div>
 
     <div class="nav-menu" id="navMenu">
       <a href="#home" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#certifications" class="nav-link">Certifications</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
 
-    <!-- ICON LINKS -->
     <div class="nav-icons">
       <!-- LinkedIn -->
-      <a href="https://linkedin.com/in/gowthamalasakani"
-         target="_blank"
-         aria-label="LinkedIn"
-         class="icon-btn">
-        <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5V16.2c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
+      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon-btn" aria-label="LinkedIn">
+        in
       </a>
 
       <!-- Resume -->
-      <a href="Gowtham Alasakani_26589_R_a (2).pdf"
-         target="_blank"
-         aria-label="Resume"
-         class="icon-btn">
-        <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5L14 3.5zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon-btn" aria-label="Resume">
+        📄
       </a>
     </div>
 
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <span class="theme-icon">🌙</span>
-    </button>
-
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-      <span class="hamburger"></span>
-    </button>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    <button class="mobile-toggle" id="mobileToggle">☰</button>
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-title fade-in">
-      Hi, I'm <span class="highlight">Gowtham Alasakani</span>
-    </h1>
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Gowtham Alasakani</h1>
+  <p>Data Engineer | Python · SQL · AWS</p>
 
-    <p class="hero-subtitle fade-in">
-      Data Engineer | Python, SQL & AWS | ETL & Analytics Solutions
-    </p>
-
-    <!-- HERO ICON BUTTONS -->
-    <div class="hero-buttons fade-in">
-      <a href="#projects" class="btn btn--primary">View Projects</a>
-
-      <a href="https://linkedin.com/in/gowthamalasakani"
-         target="_blank"
-         class="icon-btn large"
-         aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5V16.2c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
-      </a>
-
-      <a href="Gowtham Alasakani_26589_R_a (2).pdf"
-         target="_blank"
-         class="icon-btn large"
-         aria-label="Resume">
-        <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/></svg>
-      </a>
-    </div>
+  <div class="hero-actions">
+    <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon-btn large">in</a>
+    <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon-btn large">📄</a>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Get In Touch</h2>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Data Engineer with experience building scalable ETL pipelines and
+    analytics-ready datasets using Python, SQL, and AWS.
+  </p>
+</section>
 
-    <div class="contact-icons">
-      <a href="mailto:gowthamalasakani20@gmail.com" class="icon-btn large" aria-label="Email">📧</a>
-      <a href="tel:+17042013496" class="icon-btn large" aria-label="Phone">📞</a>
-      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon-btn large" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5z"/></svg>
-      </a>
-      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon-btn large" aria-label="Resume">📄</a>
-    </div>
-  </div>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:gowthamalasakani20@gmail.com">gowthamalasakani20@gmail.com</a></p>
+  <p>Phone: <a href="tel:+17042013496">+1-704-201-3496</a></p>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Gowtham Alasakani</p>
+  © 2026 Gowtham Alasakani
 </footer>
 
 <script src="app.js"></script>
 </body>
 </html>
+
 
 
