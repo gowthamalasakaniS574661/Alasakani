@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" data-color-scheme="light">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gowtham Alasakani | Data Engineer</title>
-
-  <meta name="description" content="Gowtham Alasakani – Data Engineer skilled in Python, SQL, AWS, ETL pipelines.">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="nav-brand">GA</div>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">GA</div>
 
-    <div class="nav-menu" id="navMenu">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#contact" class="nav-link">Contact</a>
+    <nav class="menu" id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon">in</a>
+      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon">📄</a>
+      <button id="themeToggle">🌙</button>
+      <button id="menuToggle">☰</button>
     </div>
-
-    <div class="nav-icons">
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon-btn" aria-label="LinkedIn">
-        in
-      </a>
-
-      <!-- Resume -->
-      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon-btn" aria-label="Resume">
-        📄
-      </a>
-    </div>
-
-    <button class="theme-toggle" id="themeToggle">🌙</button>
-    <button class="mobile-toggle" id="mobileToggle">☰</button>
   </div>
-</nav>
+</header>
 
-<!-- HERO -->
-<section id="home" class="hero">
+<section class="hero">
   <h1>Gowtham Alasakani</h1>
-  <p>Data Engineer | Python · SQL · AWS</p>
+  <p>Data Engineer · Python · SQL · AWS</p>
 
   <div class="hero-actions">
-    <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon-btn large">in</a>
-    <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon-btn large">📄</a>
+    <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="btn">Resume</a>
+    <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="btn outline">LinkedIn</a>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="section">
-  <h2>About Me</h2>
+  <h2>About</h2>
   <p>
-    Data Engineer with experience building scalable ETL pipelines and
-    analytics-ready datasets using Python, SQL, and AWS.
+    Data Engineer with experience designing ETL pipelines, analytics-ready datasets,
+    and cloud-based data solutions using Python, SQL, and AWS.
   </p>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
+<section id="skills" class="section alt">
+  <h2>Skills</h2>
+  <div class="grid">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>AWS</span>
+    <span>ETL Pipelines</span>
+    <span>Data Modeling</span>
+    <span>Analytics</span>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>ETL Pipeline</h3>
+      <p>Built scalable ETL workflows using Python & SQL.</p>
+    </div>
+    <div class="card">
+      <h3>Analytics Platform</h3>
+      <p>Designed reporting datasets for business insights.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:gowthamalasakani20@gmail.com">gowthamalasakani20@gmail.com</a></p>
   <p>Phone: <a href="tel:+17042013496">+1-704-201-3496</a></p>
@@ -74,6 +86,7 @@
 <script src="app.js"></script>
 </body>
 </html>
+
 
 
 
