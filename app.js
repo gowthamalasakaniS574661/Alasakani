@@ -1,5 +1,49 @@
-const portfolioData = {
+/* ===================== THEME TOGGLE ===================== */
 
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.querySelector(".theme-icon");
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.documentElement.setAttribute("data-theme", "dark");
+  themeIcon.textContent = "☀️";
+}
+
+// Toggle theme
+themeToggle.addEventListener("click", () => {
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+
+  if (isDark) {
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.setItem("theme", "light");
+    themeIcon.textContent = "🌙";
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+    themeIcon.textContent = "☀️";
+  }
+});
+
+/* ===================== MOBILE MENU ===================== */
+
+const mobileToggle = document.getElementById("mobileToggle");
+const navMenu = document.getElementById("navMenu");
+
+mobileToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+/* Close menu when clicking a link (mobile UX fix) */
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
+
+/* ===================== PORTFOLIO DATA ===================== */
+
+const portfolioData = {
   skills: {
     programming: ['Python', 'SQL', 'Java', 'JavaScript', 'C', 'C++'],
     web: ['React', 'Node.js', 'Express.js', 'HTML', 'CSS', 'Bootstrap'],
@@ -24,7 +68,6 @@ const portfolioData = {
   projects: [
     {
       title: 'Plant Disease Detection (Machine Learning)',
-      duration: 'May 2025 – Jun 2025',
       description: 'Built an end-to-end ML pipeline using Python, TensorFlow, OpenCV, and Pandas.',
       achievements: [
         'Improved disease classification accuracy by 25%',
@@ -57,17 +100,6 @@ const portfolioData = {
         'Improved reliability through debugging and testing',
         'Worked in Agile-based development cycles'
       ]
-    },
-    {
-      title: 'Data Analyst – Machine Learning',
-      company: 'Phoenix Global',
-      location: 'Hyderabad, India',
-      duration: 'Apr 2023 – Jun 2023',
-      points: [
-        'Improved predictive model accuracy by 8%',
-        'Performed feature engineering and EDA',
-        'Used Python, Pandas, Scikit-learn, AWS EC2'
-      ]
     }
   ],
 
@@ -79,59 +111,75 @@ const portfolioData = {
   ]
 };
 
-/* ===== RENDER FUNCTIONS ===== */
+/* ===================== RENDER FUNCTIONS ===================== */
 
 function renderSkills() {
-  const grid = document.getElementById('skillsGrid');
+  const grid = document.getElementById("skillsGrid");
+  if (!grid) return;
+
   Object.entries(portfolioData.skills).forEach(([key, values]) => {
-    const div = document.createElement('div');
-    div.className = 'skill-category';
-    div.innerHTML = `<h3>${key.toUpperCase()}</h3>
-      <div class="skill-tags">${values.map(v => `<span class="skill-tag">${v}</span>`).join('')}</div>`;
+    const div = document.createElement("div");
+    div.className = "skill-category";
+    div.innerHTML = `
+      <h3>${key.toUpperCase()}</h3>
+      <div class="skill-tags">
+        ${values.map(v => `<span class="skill-tag">${v}</span>`).join("")}
+      </div>
+    `;
     grid.appendChild(div);
   });
 }
 
 function renderProjects() {
-  const grid = document.getElementById('projectsGrid');
+  const grid = document.getElementById("projectsGrid");
+  if (!grid) return;
+
   portfolioData.projects.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'project-card';
+    const card = document.createElement("div");
+    card.className = "project-card";
     card.innerHTML = `
       <h3>${p.title}</h3>
       <p>${p.description}</p>
-      <ul>${p.achievements.map(a => `<li>${a}</li>`).join('')}</ul>
+      <ul>${p.achievements.map(a => `<li>${a}</li>`).join("")}</ul>
     `;
     grid.appendChild(card);
   });
 }
 
 function renderExperience() {
-  const grid = document.getElementById('experienceTimeline');
+  const grid = document.getElementById("experienceTimeline");
+  if (!grid) return;
+
   portfolioData.experience.forEach(e => {
-    const div = document.createElement('div');
-    div.className = 'experience-card';
+    const div = document.createElement("div");
+    div.className = "experience-card";
     div.innerHTML = `
       <h3>${e.title} – ${e.company}</h3>
       <small>${e.location} | ${e.duration}</small>
-      <ul>${e.points.map(p => `<li>${p}</li>`).join('')}</ul>
+      <ul>${e.points.map(p => `<li>${p}</li>`).join("")}</ul>
     `;
     grid.appendChild(div);
   });
 }
 
 function renderCertifications() {
-  const grid = document.getElementById('certificationsGrid');
+  const grid = document.getElementById("certificationsGrid");
+  if (!grid) return;
+
   portfolioData.certifications.forEach(c => {
-    const div = document.createElement('div');
-    div.className = 'certification-card';
+    const div = document.createElement("div");
+    div.className = "certification-card";
     div.textContent = c;
     grid.appendChild(div);
   });
 }
 
-/* INIT */
-renderSkills();
-renderProjects();
-renderExperience();
-renderCertifications();
+/* ===================== INIT ===================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderSkills();
+  renderProjects();
+  renderExperience();
+  renderCertifications();
+});
+
