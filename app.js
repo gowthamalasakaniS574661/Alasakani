@@ -41,12 +41,21 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
+// Check for reduced motion preference
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // Observe sections for scroll animations
 document.querySelectorAll(".section, .card").forEach(el => {
-  el.style.opacity = "0";
-  el.style.transform = "translateY(30px)";
-  el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-  observer.observe(el);
+  if (prefersReducedMotion) {
+    // Skip animations for users who prefer reduced motion
+    el.style.opacity = "1";
+    el.style.transform = "translateY(0)";
+  } else {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(30px)";
+    el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+    observer.observe(el);
+  }
 });
 
 
