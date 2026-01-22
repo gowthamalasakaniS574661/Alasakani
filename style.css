@@ -79,6 +79,14 @@ body {
   }
 }
 
+@media (prefers-contrast: high) {
+  .logo {
+    color: var(--primary);
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+}
+
 .menu a {
   margin-right: 24px;
   text-decoration: none;
@@ -148,8 +156,13 @@ body {
   height: 200%;
   background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
-  animation: moveGrid 20s linear infinite;
   z-index: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero::before {
+    animation: moveGrid 20s linear infinite;
+  }
 }
 
 @keyframes moveGrid {
@@ -171,7 +184,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: fadeInUp 0.8s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title {
+    animation: fadeInUp 0.8s ease;
+  }
 }
 
 @supports not (-webkit-background-clip: text) {
@@ -180,12 +198,25 @@ body {
   }
 }
 
+@media (prefers-contrast: high) {
+  .hero-title {
+    color: var(--primary);
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+}
+
 .hero-subtitle {
   color: var(--muted);
   margin: 16px 0 40px;
   font-size: 20px;
   font-weight: 400;
-  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-subtitle {
+    animation: fadeInUp 0.8s ease 0.2s both;
+  }
 }
 
 @keyframes fadeInUp {
@@ -200,7 +231,12 @@ body {
 }
 
 .hero-actions {
-  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-actions {
+    animation: fadeInUp 0.8s ease 0.4s both;
+  }
 }
 
 .btn {
