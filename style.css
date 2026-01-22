@@ -1749,3 +1749,45 @@ textarea.form-control {
     font-size: var(--font-size-2xl);
   }
 }
+/* ICON BUTTONS */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  color: var(--color-text);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.icon-btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.icon-btn.large {
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
