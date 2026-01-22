@@ -21,21 +21,35 @@
     </nav>
 
     <div class="actions">
-      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon">in</a>
-      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon">📄</a>
-      <button id="themeToggle">🌙</button>
-      <button id="menuToggle">☰</button>
+      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="icon" title="LinkedIn">
+        <span class="icon-linkedin">in</span>
+      </a>
+      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="icon" title="Resume">
+        <span class="icon-doc">📄</span>
+      </a>
+      <button id="themeToggle" title="Toggle theme">
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button id="menuToggle">
+        <span class="icon-menu">☰</span>
+      </button>
     </div>
   </div>
 </header>
 
 <section class="hero">
-  <h1>Gowtham Alasakani</h1>
-  <p>Data Engineer · Python · SQL · AWS</p>
+  <div class="hero-content">
+    <h1 class="hero-title">Gowtham Alasakani</h1>
+    <p class="hero-subtitle">Data Engineer · Python · SQL · AWS</p>
 
-  <div class="hero-actions">
-    <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="btn">Resume</a>
-    <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="btn outline">LinkedIn</a>
+    <div class="hero-actions">
+      <a href="Gowtham Alasakani_26589_R_a (2).pdf" target="_blank" class="btn btn-primary">
+        <span class="btn-icon">📥</span> Resume
+      </a>
+      <a href="https://linkedin.com/in/gowthamalasakani" target="_blank" class="btn btn-outline">
+        <span class="btn-icon">in</span> LinkedIn
+      </a>
+    </div>
   </div>
 </section>
 
@@ -49,13 +63,13 @@
 
 <section id="skills" class="section alt">
   <h2>Skills</h2>
-  <div class="grid">
-    <span>Python</span>
-    <span>SQL</span>
-    <span>AWS</span>
-    <span>ETL Pipelines</span>
-    <span>Data Modeling</span>
-    <span>Analytics</span>
+  <div class="grid skills-grid">
+    <span class="skill-tag"><span class="skill-icon">🐍</span> Python</span>
+    <span class="skill-tag"><span class="skill-icon">💾</span> SQL</span>
+    <span class="skill-tag"><span class="skill-icon">☁️</span> AWS</span>
+    <span class="skill-tag"><span class="skill-icon">⚙️</span> ETL Pipelines</span>
+    <span class="skill-tag"><span class="skill-icon">📊</span> Data Modeling</span>
+    <span class="skill-tag"><span class="skill-icon">📈</span> Analytics</span>
   </div>
 </section>
 
@@ -63,10 +77,16 @@
   <h2>Projects</h2>
   <div class="cards">
     <div class="card">
+      <div class="card-icon">
+        <span class="project-emoji">🔀</span>
+      </div>
       <h3>ETL Pipeline</h3>
       <p>Built scalable ETL workflows using Python & SQL.</p>
     </div>
     <div class="card">
+      <div class="card-icon">
+        <span class="project-emoji">📊</span>
+      </div>
       <h3>Analytics Platform</h3>
       <p>Designed reporting datasets for business insights.</p>
     </div>
@@ -75,8 +95,10 @@
 
 <section id="contact" class="section alt">
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:gowthamalasakani20@gmail.com">gowthamalasakani20@gmail.com</a></p>
-  <p>Phone: <a href="tel:+17042013496">+1-704-201-3496</a></p>
+  <div class="contact-info">
+    <p><span class="contact-icon">✉️</span> Email: <a href="mailto:gowthamalasakani20@gmail.com">gowthamalasakani20@gmail.com</a></p>
+    <p><span class="contact-icon">📞</span> Phone: <a href="tel:+17042013496">+1-704-201-3496</a></p>
+  </div>
 </section>
 
 <footer class="footer">
