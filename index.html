@@ -6,8 +6,8 @@
   <meta name="description" content="Gowtham Alasakani — DevOps, deployment, and data engineering. Explore experience with Python, SQL, AWS, and Docker, view projects, and download a résumé." />
   <title>Gowtham Alasakani | DevOps & Deployment Engineer</title>
   <link rel="canonical" href="https://gowthamalasakani.me/" />
-  <meta name="theme-color" content="#f6f8fc" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#f5faff" />
+  <link rel="stylesheet" href="/styles.css?v=holo-1" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -29,7 +29,7 @@
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Work</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -39,16 +39,12 @@
   <main id="main-content" tabindex="-1">
     <section id="home" class="hero" data-reveal>
       <div class="hero-left">
-        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> DevOps &amp; Deployment Engineer</p>
-        <p class="intro-name">Gowtham Alasakani</p>
-        <h1>Build smarter.<br /><span>Run better.</span></h1>
-        <p class="summary">
-          I build and support data pipelines, cloud infrastructure, and software deployments.
-          My experience includes Python and SQL workflows, AWS monitoring, and Docker-based
-          deployments for manufacturing and reporting systems.
-        </p>
+        <p class="eyebrow">GOWTHAM ALASAKANI</p>
+        <h1>Engineering<br /><span>what’s next.</span></h1>
+        <p class="hero-role">DevOps &amp; Deployment Engineer</p>
+        <p class="summary">Building reliable cloud infrastructure, data pipelines, and software deployments.</p>
         <div class="cta-row">
-          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
           <a class="btn outline" href="Gowtham_Alasakani_Resume.pdf" download>Download Resume</a>
         </div>
         <div class="contact-row">
@@ -60,25 +56,12 @@
         </div>
       </div>
 
-      <div class="hero-right interactive-stage">
-        <div class="stage-orbit orbit-one" aria-hidden="true"></div>
-        <div class="stage-orbit orbit-two" aria-hidden="true"></div>
-        <div class="floating-label label-python" aria-hidden="true">Python</div>
-        <div class="floating-label label-aws" aria-hidden="true">AWS</div>
-        <div class="floating-label label-docker" aria-hidden="true">Docker</div>
-        <div class="focus-card" data-tilt>
-          <div class="focus-top"><span>ENGINEERING FOCUS</span><span aria-hidden="true">01 / 03</span></div>
-          <div class="focus-symbol" aria-hidden="true">{ / }</div>
-          <h2 id="focus-title">Data into<br />decisions.</h2>
-          <p id="focus-description">Python and SQL pipelines that turn raw data into useful reporting.</p>
-          <div class="focus-tools" id="focus-tools">Python · SQL · ETL</div>
-          <div class="focus-controls" aria-label="Explore engineering focus">
-            <button type="button" data-focus="data" aria-pressed="true">Data</button>
-            <button type="button" data-focus="cloud" aria-pressed="false">Cloud</button>
-            <button type="button" data-focus="deploy" aria-pressed="false">Deploy</button>
-          </div>
-        </div>
-        <span class="stage-caption">EXPLORE MY STACK</span>
+      <div class="hero-right holographic-stage">
+        <img class="orbit-art" src="/assets/holographic-orbit.webp" width="1536" height="1024" alt="" fetchpriority="high" />
+        <div class="floating-label label-aws"><span class="tech-mark">aws</span><span>Cloud infrastructure</span></div>
+        <div class="floating-label label-python"><span class="tech-mark">Py</span><span>Python</span></div>
+        <div class="floating-label label-docker"><span class="tech-mark">&lt;/&gt;</span><span>Docker</span></div>
+        <div class="glass-caption"><span class="caption-symbol" aria-hidden="true">⌘</span><div>Cloud · Data · Deployment<small>TURNING IDEAS INTO RELIABLE SYSTEMS</small></div></div>
       </div>
     </section>
 
@@ -89,9 +72,34 @@
       </div>
     </div>
 
+    <section id="projects" class="section" data-reveal>
+      <div class="section-head">
+        <p class="section-kicker">01 / SELECTED WORK</p><h2>Built with<br /><em>purpose.</em></h2>
+        <p>Machine learning solution deployed for real-world agricultural impact.</p>
+      </div>
+      <div class="grid cards">
+        <div class="card project">
+          <div class="project-meta">
+            <h3>Plant Disease Detection</h3>
+          </div>
+          <p class="company">Northwest Missouri State University</p>
+          <ul class="list">
+            <li>Led end-to-end design and deployment of a machine learning solution, improving disease classification accuracy by 25% through dataset expansion and feature engineering.</li>
+            <li>Optimized data ingestion and algorithm workflows to reduce processing latency by 40%, deploying the solution across 50+ farms to enable data-driven operational decisions.</li>
+          </ul>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>Pandas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="skills" class="section" data-reveal>
       <div class="section-head">
-        <p class="section-kicker">01 / THE TOOLKIT</p><h2>Tools behind<br /><em>the work.</em></h2>
+        <p class="section-kicker">02 / THE TOOLKIT</p><h2>Tools behind<br /><em>the work.</em></h2>
         <p>Deployment and infrastructure stack built on a strong data engineering foundation.</p>
       </div>
       <div class="skill-filters" aria-label="Filter technical skills" hidden>
@@ -126,6 +134,19 @@
           <p>REST APIs, Git, GitHub, Jira, Agile/Scrum, SDLC, OOP, microservices</p>
         </div>
       </div>
+      <div class="focus-explorer">        <div class="focus-card" data-tilt>
+          <div class="focus-top"><span>ENGINEERING FOCUS</span><span aria-hidden="true">01 / 03</span></div>
+          <div class="focus-symbol" aria-hidden="true">{ / }</div>
+          <h2 id="focus-title">Data into<br />decisions.</h2>
+          <p id="focus-description">Python and SQL pipelines that turn raw data into useful reporting.</p>
+          <div class="focus-tools" id="focus-tools">Python · SQL · ETL</div>
+          <div class="focus-controls" aria-label="Explore engineering focus">
+            <button type="button" data-focus="data" aria-pressed="true">Data</button>
+            <button type="button" data-focus="cloud" aria-pressed="false">Cloud</button>
+            <button type="button" data-focus="deploy" aria-pressed="false">Deploy</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" data-reveal>
@@ -154,7 +175,7 @@
 
     <section id="experience" class="section timeline" data-reveal>
       <div class="section-head">
-        <p class="section-kicker">02 / EXPERIENCE</p><h2>Where I’ve<br /><em>made an impact.</em></h2>
+        <p class="section-kicker">03 / EXPERIENCE</p><h2>Where I’ve<br /><em>made an impact.</em></h2>
         <p>End-to-end deployment, infrastructure, and data engineering across industry and research.</p>
       </div>
       <div class="timeline-list">
@@ -257,30 +278,7 @@
       </div>
     </section>
 
-    <section id="projects" class="section" data-reveal>
-      <div class="section-head">
-        <p class="section-kicker">03 / SELECTED WORK</p><h2>Ideas brought<br /><em>to life.</em></h2>
-        <p>Machine learning solution deployed for real-world agricultural impact.</p>
-      </div>
-      <div class="grid cards">
-        <div class="card project">
-          <div class="project-meta">
-            <h3>Plant Disease Detection</h3>
-          </div>
-          <p class="company">Northwest Missouri State University</p>
-          <ul class="list">
-            <li>Led end-to-end design and deployment of a machine learning solution, improving disease classification accuracy by 25% through dataset expansion and feature engineering.</li>
-            <li>Optimized data ingestion and algorithm workflows to reduce processing latency by 40%, deploying the solution across 50+ farms to enable data-driven operational decisions.</li>
-          </ul>
-          <div class="tag-row">
-            <span>Python</span>
-            <span>TensorFlow</span>
-            <span>OpenCV</span>
-            <span>Pandas</span>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <section id="education" class="section" data-reveal>
       <div class="section-head">
@@ -359,6 +357,6 @@
     <a href="#home">Back to top &uarr;</a>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="/app.js?v=holo-1"></script>
 </body>
 </html>
