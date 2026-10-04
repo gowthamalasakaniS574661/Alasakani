@@ -59,7 +59,7 @@
   ],
   "pipelines": [
     "Reliable data.\nFrom the start.",
-    "Spark, Airflow, and AWS. From ingestion to analysis."
+    "PySpark, Prefect, and AWS. From ingestion to analysis."
   ]
 };
   document.querySelectorAll('[data-focus]').forEach(button => {
@@ -101,53 +101,44 @@
   "plant": {
     "type": "ACADEMIC PROJECT / MACHINE LEARNING",
     "title": "Plant Disease Detection",
-    "subtitle": "Northwest Missouri State University \u00b7 May \u2013 June 2025",
+    "subtitle": "Northwest Missouri State University \u00b7 2025",
     "bullets": [
-      "Built a plant disease classification solution using Python, TensorFlow, and OpenCV, applying image preprocessing and augmentation to improve model robustness.",
-      "Engineered features from image data using Pandas and NumPy, covering data preparation, feature engineering, model training, and validation.",
-      "Collected and organized a labeled image dataset across multiple plant disease categories to support supervised model training.",
-      "Trained and tuned convolutional neural network models, adjusting hyperparameters to improve classification accuracy.",
-      "Applied data augmentation techniques (rotation, flipping, scaling) to increase training data diversity and reduce overfitting.",
-      "Built a reproducible preprocessing-to-evaluation pipeline to streamline experimentation and speed up iteration cycles.",
-      "Evaluated classification results and optimized data-processing workflows to improve model performance and processing efficiency.",
-      "Compared performance across baseline and tuned model architectures to select the best-performing approach.",
-      "Used structured dataset expansion and validation to strengthen classification accuracy across plant disease categories.",
-      "Analyzed misclassified samples to identify weak points in the model and guide further preprocessing improvements.",
-      "Visualized model performance (accuracy/loss curves, confusion matrix) to communicate results clearly.",
-      "Documented experimental results and performance comparisons across model iterations to guide further improvements."
+      "Built a plant disease classification solution using Python, TensorFlow, OpenCV, Pandas, and NumPy, performing image collection, dataset organization, preprocessing, feature engineering, and supervised model development across multiple plant disease categories.",
+      "Developed and trained convolutional neural network models, tuning hyperparameters and comparing baseline and optimized architectures to improve classification accuracy, robustness, and overall model performance.",
+      "Applied image augmentation techniques including rotation, flipping, and scaling to expand training data diversity, reduce overfitting, and strengthen model generalization across disease categories.",
+      "Built a reproducible preprocessing-to-evaluation pipeline and optimized data-processing workflows to streamline experimentation, improve processing efficiency, validate structured dataset expansion, and accelerate model iteration.",
+      "Evaluated and analyzed model results using accuracy, loss curves, confusion matrices, and misclassified samples, identifying performance gaps and guiding preprocessing and model improvements; documented experimental results and performance comparisons across iterations."
     ],
     "tools": "Python \u00b7 TensorFlow \u00b7 OpenCV \u00b7 Pandas \u00b7 NumPy"
   },
   "pipeline": {
     "type": "PROFESSIONAL WORK / DATA ENGINEERING",
-    "title": "Industrial Data Pipelines",
-    "subtitle": "Millennium Intech Private Limited \u00b7 June 2023 \u2013 July 2024",
+    "title": "ETL/ELT & Data Quality",
+    "subtitle": "Indegene \u00b7 June 2023 \u2013 July 2024",
     "bullets": [
-      "Developed ETL pipelines using Python, SQL, Apache Spark, Apache Airflow, and AWS (S3, EC2, RDS) to ingest and process 1M+ daily industrial sensor records from manufacturing equipment.",
-      "Reduced end-to-end pipeline latency by roughly 30\u201340% through workflow optimization and orchestration improvements in Airflow.",
-      "Transformed time-series records into analytics-ready datasets supporting real-time operational monitoring, diagnostics, and performance analysis.",
-      "Applied Pandas, NumPy, and statistical techniques to identify trends and anomalies in industrial automation datasets, flagging deviations for engineering review.",
-      "Performed data-quality checks and maintained validation documentation to support reliable dashboards and decision-support reporting.",
-      "Monitored pipeline health using AWS CloudWatch and managed access controls via IAM to ensure secure, reliable data operations.",
-      "Documented pipeline architecture and data lineage using dbt to support onboarding, auditability, and cross-team knowledge sharing."
+      "Designed, developed, and optimized scalable ETL and ELT pipelines using Dataiku, Python, SQL, and Snowflake to transform complex datasets into reliable, analytics-ready data products that supported business reporting and daily data operations.",
+      "Wrote and optimized advanced Snowflake SQL queries, including complex joins, CTEs, window functions, aggregations, subqueries, and analytical transformations, improving query performance and supporting data analysis, reporting, and downstream business intelligence workloads.",
+      "Built automated data processing and validation workflows using Python, Pandas, NumPy, Dataiku, and SQL, applying data quality checks, reconciliation rules, exception handling, and monitoring to detect data issues, support corrective actions, and improve pipeline reliability.",
+      "Established and maintained data governance frameworks, data quality standards, metadata management practices, validation procedures, and operational controls, partnering with Data and Analytics Leads, business units, IT, and offshore teams to translate business requirements into reliable technical solutions and improve data accuracy, consistency, and usability.",
+      "Managed data engineering delivery across Agile and DevOps environments by coordinating data analysts and engineers, tracking SLAs, milestones, risks, and dependencies, maintaining status reports, and collaborating with onshore and offshore stakeholders to manage delivery and resolve project risks.",
+      "Improved ETL processes, Snowflake workloads, Dataiku flows, and operational procedures through data profiling, validation, and process testing, reducing processing time and operational risk while supporting dashboard and reporting teams with reliable datasets, decision-ready analysis, governance updates, and executive project status reports."
     ],
-    "tools": "Python \u00b7 SQL \u00b7 Spark \u00b7 Airflow \u00b7 AWS \u00b7 dbt"
+    "tools": "Dataiku \u00b7 Python \u00b7 SQL \u00b7 Snowflake"
   },
   "operations": {
-    "type": "PROFESSIONAL WORK / OPERATIONAL ANALYTICS",
-    "title": "Infrastructure Analytics",
-    "subtitle": "Fluidstack \u00b7 October 2025 \u2013 Present",
+    "type": "PROFESSIONAL WORK / AWS DATA ENGINEERING",
+    "title": "Cloud Data Platforms",
+    "subtitle": "Astir IT Solution\u2019s \u00b7 October 2025 \u2013 Present",
     "bullets": [
-      "Analyze infrastructure and operational datasets using SQL and Python to identify utilization trends, reporting discrepancies, and opportunities to improve resource efficiency.",
-      "Clean, transform, and validate data from multiple sources, checking for missing values, duplicate records, and inconsistent reporting to maintain data integrity.",
-      "Develop recurring, near-real-time reports and dashboards to track resource utilization, service availability, and operational performance.",
-      "Investigate unusual changes in operational metrics and collaborate with technical teams to distinguish data-quality issues from underlying infrastructure problems.",
-      "Automate recurring data preparation and reporting workflows using Python and Pandas, cutting manual reporting effort and improving turnaround for stakeholders.",
-      "Translate findings into stakeholder summaries and document metric definitions, validation procedures, and reporting logic to standardize analysis across teams.",
-      "Partner with engineering and operations teams to define new tracking metrics and refine existing dashboards based on evolving business needs.",
-      "Present recurring findings and recommendations to technical stakeholders to support data-driven infrastructure decisions."
+      "Designed, built, and operated AWS data engineering solutions with Python, PySpark, SparkSQL, Amazon S3, Databricks, Snowflake, dbt, and Airbyte, developing scalable ingestion and transformation pipelines that integrated APIs, databases, files, and enterprise source systems into analytics-ready data platforms.",
+      "Developed and maintained Prefect workflows with reusable flows and tasks, scheduled and parameterized deployments, retry logic, failure handling, and recovery strategies monitored production runs through Prefect UI and Cloud to troubleshoot failed workflows and maintain reliable data delivery.",
+      "Built data quality and validation processes using Python, PySpark, SQL, and dbt tests to detect schema changes, missing records, duplicates, invalid values, and reconciliation issues, improving the reliability of downstream datasets for analytics and reporting.",
+      "Implemented cloud infrastructure and DevOps practices using Terraform, Docker, GitHub Actions, AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy, and Amazon EKS, automating infrastructure provisioning, application builds, testing, deployments, environment promotion, and controlled production releases.",
+      "Secured and monitored production data platforms using AWS IAM, AWS Secrets Manager, Amazon CloudWatch, S3 security controls, metrics, dashboards, alarms, and centralized logging, applying least-privilege access and proactive monitoring to improve pipeline observability and operational reliability.",
+      "Partnered with onshore and offshore data engineers, cloud engineers, application teams, and business stakeholders to analyze source systems, assess analytics use cases, integrate data, design scalable solutions, translate business requirements into technical solutions, and troubleshoot production issues across development, test, and production environments.",
+      "Integrated cloud-native services, including AWS Lambda, SQS, SNS, EventBridge, REST APIs, Snowpark, and AWS Step Functions, to enable event-driven data ingestion and distributed data workflows while strengthening data governance, cataloging, technical documentation, and reusable engineering standards for more consistent development and production delivery."
     ],
-    "tools": "SQL \u00b7 Python \u00b7 Pandas \u00b7 Operational dashboards"
+    "tools": "AWS \u00b7 PySpark \u00b7 Databricks \u00b7 Snowflake \u00b7 Prefect \u00b7 dbt \u00b7 Airbyte"
   }
 };
   const dialog = document.querySelector('.story-dialog');
@@ -217,3 +208,4 @@
   addEventListener('resize', queueScroll);
   updateScroll();
 })();
+
