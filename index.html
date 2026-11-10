@@ -91,6 +91,32 @@
 #studio-portfolio-preview #sp-intro-video{display:block;width:100%;max-height:480px;object-fit:contain;border-radius:20px;background:#fff;box-shadow:0 12px 35px #0d0e1214;}
 @media(max-width:600px){#studio-portfolio-preview #sp-intro-video{max-height:380px;}}
 @media print{.sp-video-wrap{display:none!important;}}
+</style><style id="glossy-sticky-menu">
+html{scroll-padding-top:var(--menu-offset,160px)}
+#studio-portfolio-preview .sp-nav{
+ position:sticky;top:12px;z-index:100;
+ background:linear-gradient(125deg,rgba(255,255,255,.78),rgba(255,255,255,.32) 48%,rgba(255,255,255,.58));
+ backdrop-filter:blur(24px) saturate(170%);-webkit-backdrop-filter:blur(24px) saturate(170%);
+ border:1px solid rgba(255,255,255,.8);
+ box-shadow:0 12px 36px rgba(13,14,18,.12),inset 0 1px 0 #fff,inset 0 -1px 0 rgba(255,255,255,.4);
+}
+#studio-portfolio-preview .sp-simple-nav{gap:4px}
+#studio-portfolio-preview .sp-simple-nav a{padding:9px 12px;border-radius:999px;transition:background .2s ease}
+#studio-portfolio-preview .sp-simple-nav a:hover,#studio-portfolio-preview .sp-simple-nav a:focus-visible{background:rgba(255,255,255,.7)}
+#studio-portfolio-preview .sp-tools summary{background:rgba(255,255,255,.3);border:1px solid rgba(255,255,255,.65);border-radius:999px}
+#studio-portfolio-preview .sp-tools details[open] .sp-swatches{background:rgba(248,248,251,.95);backdrop-filter:blur(24px)}
+@media(max-width:700px){
+ #studio-portfolio-preview .sp-nav{top:8px;padding:10px 12px;gap:8px;border-radius:24px}
+ #studio-portfolio-preview .sp-brand{font-size:12px;gap:8px;flex:1}
+ #studio-portfolio-preview .sp-brand .sp-mono{display:none}
+ #studio-portfolio-preview .sp-tools{width:auto;gap:4px;flex-wrap:nowrap}
+ #studio-portfolio-preview .sp-tools button{padding:9px 10px;font-size:11px}
+ #studio-portfolio-preview .sp-tools summary{padding:9px 8px;font-size:11px}
+ #studio-portfolio-preview .sp-simple-nav{order:3;width:100%;justify-content:space-between;flex-wrap:nowrap;border-top:1px solid rgba(255,255,255,.6);padding-top:4px}
+ #studio-portfolio-preview .sp-simple-nav a{padding:9px 10px}
+}
+@supports not (backdrop-filter:blur(1px)){#studio-portfolio-preview .sp-nav{background:rgba(250,250,248,.95)}}
+@media print{#studio-portfolio-preview .sp-nav{display:none!important}}
 </style></head><body><div id="studio-portfolio-preview">
 <header class="sp-nav">
 <div class="sp-brand"><span class="sp-logo">GA</span><div>Gowtham Alasakani<span class="sp-mono">● STUDIO MOTION · DEVOPS &amp; DATA</span></div></div><nav aria-label="Portfolio" class="sp-simple-nav"><a href="#sp-work">Work</a><a href="#sp-experience">Experience</a><a href="#sp-skills">Skills</a><a href="#sp-contact">Contact</a></nav>
@@ -200,4 +226,6 @@ printButton.addEventListener('click',()=>{if(loaded)window.print();else window.o
  document.addEventListener('visibilitychange',()=>{if(document.hidden)video.pause();});
 })();
 </script>
-</body></html>
+<script>
+(()=>{const menu=document.querySelector('.sp-nav');const update=()=>document.documentElement.style.setProperty('--menu-offset',(menu.getBoundingClientRect().height+28)+'px');update();if('ResizeObserver' in window)new ResizeObserver(update).observe(menu);else window.addEventListener('resize',update);})();
+</script></body></html>
